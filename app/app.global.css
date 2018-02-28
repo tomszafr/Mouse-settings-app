@@ -1,0 +1,67 @@
+@import "~font-awesome/css/font-awesome.css";
+@font-face {
+    font-family: Oswald;
+    src: url(../resources/fonts/Oswald-Light.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: Oswald;
+  src: url(../resources/fonts/Oswald-Medium.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: Cabin;
+  src: url(../resources/fonts/Cabin-BoldItalic.ttf);
+  font-weight: bold;
+  font-style: italic;
+}
+
+body {
+  position: relative;
+  color: black;
+  height: 100vh;
+  /* background-color: #F5F5F6; */
+  background-color: white;
+  font-family: Oswald, Arial, Helvetica, Helvetica Neue, serif;
+  letter-spacing: 0.5px;
+  overflow-y: hidden;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+button {
+  font-family: Oswald;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 2px;
+  background-color: #ff7043;
+  width: 80px;
+  cursor: pointer;
+  height: 30px;
+  line-height: 18px;
+}
+
+input {
+  padding: 0;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 0.9rem;
+  border: none;
+  border-bottom: 2px solid #ebebeb;
+}
+
+input:focus {
+  outline: none;
+}

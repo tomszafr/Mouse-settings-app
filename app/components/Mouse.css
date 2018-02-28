@@ -1,0 +1,99 @@
+.container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  color: black;
+  background-color:#ff7043;
+  padding-left: 20px;
+  flex: 0;
+}
+
+.header h2 {
+  font-size: 1.45rem;
+  line-height: 60px;
+}
+
+.inputBox {
+  padding: 20px;
+  height: auto;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputBox input:not(.inputError):hover {
+  border-bottom: 2px solid #7d7d7d;
+}
+
+.inputBox input:not(.inputError):focus {
+  outline: none;
+  border-bottom: 2px solid #ff7043;
+  caret-color: #ff7043;
+}
+
+.footer {
+  flex: 1;
+  background-color: #ffa270;
+}
+
+.buttonBox {
+  margin-top: -15px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.snackbar {
+  font-size: 0.9rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #323232;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 2px;
+  width: 288px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.footnote {
+  font-family: Cabin;
+  font-size: 0.7rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 5px;
+}
+
+.hidden {
+  bottom: -5rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.visible {
+  bottom: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.inputError {
+  border-bottom: 2px solid #d50000;
+  caret-color: #d50000;
+}
+
+.errorMsg {
+  box-sizing: border-box;
+  height: 20px;
+  line-height: 12px;
+  color: #d81e1e;
+  font-size: 0.75rem;
+  margin-top: 5px;
+}
